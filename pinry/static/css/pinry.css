@@ -334,6 +334,7 @@ textarea {
 
 .navbar-nav > li > a {
     color: #D8D8D8 !important;
+    text-shadow: 0px 0px 3px black;
     font-weight: bold;
 }
 
@@ -354,6 +355,7 @@ body {
 #bookmarklet {
     background: #BBB;
     color: #111 !important;
+    text-shadow: none;
 }
 
 #bookmarklet:hover {
