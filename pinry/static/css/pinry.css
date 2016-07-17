@@ -388,3 +388,7 @@ body {
 .pin img {
     background: white;
 }
+
+.tag a {
+    color: #dad000;
+}
