@@ -388,6 +388,7 @@ body {
 
 .modal-content {
     border-radius: 0px;
+    color: #111;
 }
 
 .modal-header {
