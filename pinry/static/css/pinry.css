@@ -303,3 +303,42 @@ textarea {
     text-align: center;
 }
 /* End Pins */
+
+.logo {
+    font-size: 30px;
+    font-family: 'Alegreya Sans', sans-serif;
+    letter-spacing: -2px;
+}
+
+.logo .glyphicon {
+    font-size: 24px;
+    color: #C63120;
+}
+
+.navbar-brand {
+    padding: 17px 15px;
+}
+
+.navbar {
+    background: #383838;
+}
+
+.navbar-nav > li > a {
+    color: #D8D8D8 !important;
+    font-weight: bold;
+}
+
+body {
+    /* background: #A4A4A4; */
+    background: #A4A4A4;
+}
+
+#bookmarklet {
+    background: #BBB;
+    color: #111 !important;
+}
+
+#bookmarklet:hover {
+    background: #444;
+    color: #BBB !important;
+}
