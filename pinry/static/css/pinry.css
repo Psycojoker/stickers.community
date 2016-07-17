@@ -380,3 +380,7 @@ body {
     font-weight: bold;
     font-size: 2.8em;
 }
+
+.pin img {
+    background: white;
+}
