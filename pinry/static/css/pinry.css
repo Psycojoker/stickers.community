@@ -179,9 +179,9 @@ textarea {
 
 .pin {
     background: #fff;
-    -webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
     -webkit-box-shadow: 0 1px 0 #bbb;
        -moz-box-shadow: 0 1px 0 #bbb;
             box-shadow: 0 1px 0 #bbb;
@@ -193,9 +193,9 @@ textarea {
 .pin .editable {
     background: rgba(255, 255, 255, 0.4);
     border: 2px solid rgba(255, 255, 255, 0.4);
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
     position: absolute;
     right: 7px;
     top: 7px;
@@ -208,9 +208,9 @@ textarea {
 
 .pin .editable .borderable {
     background: rgba(0, 0, 0, 0.8);
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
     cursor: pointer;
     padding: 5px 8px;
     display: inline-block;
@@ -223,12 +223,12 @@ textarea {
 }
 
 .pin img {
-    -webkit-border-top-left-radius: 3px;
-        -moz-border-radius-topleft: 3px;
-            border-top-left-radius: 3px;
-    -webkit-border-top-right-radius: 3px;
-        -moz-border-radius-topright: 3px;
-            border-top-right-radius: 3px;
+    -webkit-border-top-left-radius: 0px;
+        -moz-border-radius-topleft: 0px;
+            border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+        -moz-border-radius-topright: 0px;
+            border-top-right-radius: 0px;
     cursor: -webkit-zoom-in;
     cursor:    -moz-zoom-in;
     display: block;
@@ -267,15 +267,15 @@ textarea {
 
 .pin-footer .avatar {
     background: white;
-    -webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
 }
 
 .pin-footer .avatar img {
-    -webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
     height: 30px;
     width: 30px;
 }
