@@ -311,6 +311,10 @@ textarea {
     text-shadow: 0px 0px 30px black;
 }
 
+.logo b {
+    color: #D8D8D8;
+}
+
 .glyphicon-heart {
     font-size: 24px;
     color: #C63120;
