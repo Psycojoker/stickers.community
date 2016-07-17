@@ -145,7 +145,7 @@ $(window).load(function() {
                 if ($('#pins').length !== 0) {
                     var theEnd = document.createElement('div');
                     theEnd.id = 'the-end';
-                    $(theEnd).html('&mdash; End &mdash;');
+                    $(theEnd).html('<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>');
                     $(theEnd).css('padding', 50);
                     $('body').append(theEnd);
                 }
