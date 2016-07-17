@@ -14,9 +14,9 @@
                     <div class="text pull-left">
                         <span class="dim">pinned by</span> {{submitter.username}}
                         {{#if tags}}
-                            <br /><span class="dim">in</span>
+                        <br>
                         {{#each tags}}
-                            <span class="tag"><a href="/pins/tag/{{this}}/" class="btn btn-xs btn-primary">{{this}}</a></span>
+                        <span class="tag"><a href="/pins/tag/{{this}}/" class="">#{{this}}</a></span>
                         {{/each}}
                         {{/if}}
                     </div>
