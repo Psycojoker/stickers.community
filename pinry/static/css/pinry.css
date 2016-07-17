@@ -361,6 +361,10 @@ body {
     border-radius: 0px;
 }
 
+.pin img {
+    border-radius: 0px;
+}
+
 .modal-content {
     border-radius: 0px;
 }
