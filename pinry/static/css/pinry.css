@@ -414,3 +414,7 @@ body {
 .tag a {
     color: #dad000;
 }
+
+#the-end {
+    margin-bottom: 80vh;
+}
