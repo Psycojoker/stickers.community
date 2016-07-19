@@ -35,6 +35,18 @@ class Image(BaseImage):
     class Meta:
         proxy = True
 
+LICENCES = (
+    ('cc-by', 'CC-BY'),
+    ('cc-by-sa', 'CC-BY-SA'),
+    ('cc-by-nc', 'CC-BY-NC'),
+    ('cc-by-nc-sa', 'CC-BY-NC-SA'),
+    ('cc-by-nd', 'CC-BY-ND'),
+    ('cc-by-nc-nd', 'CC-BY-NC-ND'),
+    ('cc0', 'Public Domain (CC0)'),
+    ('free-art', 'Free Art Licence'),
+    ('wtfpl', 'WTFpl'),
+    ('other', 'Other (put it in the description)'),
+)
 
 class Pin(models.Model):
     submitter = models.ForeignKey(User)
@@ -43,7 +55,8 @@ class Pin(models.Model):
     description = models.TextField(blank=True, null=True)
     image = models.ForeignKey(Image, related_name='pin')
     published = models.DateTimeField(auto_now_add=True)
+    licence = models.CharField(null=True, choices=LICENCES, max_length=255)
     tags = TaggableManager()
 
     def __unicode__(self):
-        return self.url
+        return self.url if self.url else unicode(self.id)

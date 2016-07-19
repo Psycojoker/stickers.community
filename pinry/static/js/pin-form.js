@@ -18,6 +18,7 @@ $(window).load(function() {
             submitter: currentUser,
             url: $('#pin-form-image-url').val(),
             description: $('#pin-form-description').val(),
+            licence: $('#pin-form-licence').val(),
             tags: cleanTags($('#pin-form-tags').val())
         }
     }
@@ -27,6 +28,7 @@ $(window).load(function() {
                 submitter: currentUser,
                 image: {thumbnail: {image: $('#pin-form-image-url').val()}},
                 description: $('#pin-form-description').val(),
+                licence: $('#pin-form-licence').val(),
                 tags: cleanTags($('#pin-form-tags').val())
             }]},
             html = renderTemplate('#pins-template', context),
@@ -60,7 +62,7 @@ $(window).load(function() {
         $('body').append(renderTemplate('#pin-form-template', ''));
         var modal = $('#pin-form'),
             formFields = [$('#pin-form-image-url'), $('#pin-form-description'),
-            $('#pin-form-tags')],
+            $('#pin-form-tags'), $("#pin-form-licence")],
             pinFromUrl = getUrlParameter('pin-image-url');
         // If editable grab existing data
         if (editPinId) {
@@ -72,6 +74,7 @@ $(window).load(function() {
                 $('#pin-form-image-upload').parent().hide();
                 $('#pin-form-description').val(editedPin.description);
                 $('#pin-form-tags').val(editedPin.tags);
+                $('#pin-form-licence').val(editedPin.licence);
                 createPinPreviewFromForm();
             });
         }
@@ -128,7 +131,8 @@ $(window).load(function() {
                 var apiUrl = '/api/v1/pin/'+editedPin.id+'/?format=json';
                 var data = {
                     description: $('#pin-form-description').val(),
-                    tags: cleanTags($('#pin-form-tags').val())
+                    tags: cleanTags($('#pin-form-tags').val()),
+                    licence: $('#pin-form-licence').val()
                 }
                 var promise = $.ajax({
                     type: "put",
@@ -156,7 +160,8 @@ $(window).load(function() {
                 var data = {
                     submitter: '/api/v1/user/'+currentUser.id+'/',
                     description: $('#pin-form-description').val(),
-                    tags: cleanTags($('#pin-form-tags').val())
+                    tags: cleanTags($('#pin-form-tags').val()),
+                    tags: $('#pin-form-licence').val()
                 };
                 if (uploadedImage) data.image = '/api/v1/image/'+uploadedImage+'/';
                 else data.url = $('#pin-form-image-url').val();

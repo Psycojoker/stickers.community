@@ -26,6 +26,17 @@
                                 <input type="text" name="pin-form-tags" id="pin-form-tags" class="form-control"/>
                                 <p class="help-block">Space/comma separated words, use camel case if needed</p>
                             </div>
+                            <div class="form-group">
+                                <label for="pin-form-licence">Licence</label>
+                                <select class="form-control" name="pin-form-licence" id="pin-form-licence">
+                                {% endverbatim %}
+                                    <option value=""></option>
+                                    {% for value, name in licences %}
+                                    <option value="value">{{ name }}</option>
+                                    {% endfor %}
+                                {% verbatim %}
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
